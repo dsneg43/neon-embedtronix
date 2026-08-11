@@ -176,7 +176,8 @@
     background:var(--bg);
   }
   .solution-card.full-width .solution-photo{
-    height:220px;
+    height:auto;
+    max-height:450px;
   }
   .solution-photo img{
     width:100%;
@@ -186,8 +187,13 @@
     filter:saturate(0.92) contrast(1.02);
     transition:transform .35s ease, filter .35s ease;
   }
+  .solution-card.full-width .solution-photo img{
+    height:auto;
+    max-height:450px;
+    object-fit:contain;
+  }
   .solution-card:hover .solution-photo img{
-    transform:scale(1.04);
+    transform:scale(1.02);
     filter:saturate(1) contrast(1.05);
   }
 
@@ -464,7 +470,7 @@
       <!-- 5. IoT for Smart Building/Cities (Full Width) -->
       <div class="solution-card full-width">
         <div class="solution-photo">
-          <img src="https://6a7afab475756f18755f0374.imgix.net/smartcity1.png?auto=format&fit=max&w=1200&q=80" alt="IoT for Smart Building and Cities - Smart Infrastructure Network" style="max-width: 100%; height: auto;">
+          <img src="https://6a7afab475756f18755f0374.imgix.net/smartcity1.png?auto=format&fit=max&w=1200&q=80" alt="IoT for Smart Building and Cities - Smart Infrastructure Network">
         </div>
         <div class="solution-header">
           <h3>IoT for Smart Building / Cities</h3>
